@@ -1,0 +1,31 @@
+---
+import { site, socialLinks } from '../lib/site';
+import { pageHref, withBase } from '../lib/urls';
+
+const social = socialLinks();
+---
+
+<footer class="site-footer">
+  <div class="wrap">
+    <nav aria-label="Footer">
+      <ul class="nav-list">
+        <li><a href={pageHref('')}>Archive</a></li>
+        <li><a href={pageHref('about')}>About</a></li>
+        <li><a href={pageHref('privacy')}>Privacy</a></li>
+      </ul>
+    </nav>
+    {
+      social.length > 0 && (
+        <ul class="social-list">
+          {social.map((link) => (
+            <li>
+              <a href={link.href} rel="me">
+                {link.label}
+              </a>
+            </li>
+          ))}
+        </ul>
+      )
+    }
+  </div>
+</footer>

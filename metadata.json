@@ -1,0 +1,6 @@
+{
+  "name": "Ethan Prompts Online - AI Workflow & Prompt Archive",
+  "description": "Searchable notes, copyable prompts, and step-by-step video workflows for AI image and video creation, inspired by the Paperleaf Ghost theme.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
